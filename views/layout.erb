@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Meme Tube Lab</title>
+    <link rel='stylesheet' href='/style.css'>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='/'>Home Page</a></li>
+        <li><a href='/new'>New Video</a></li>
+        <li><a href='/videos'>Videos</a></li>
+
+        <h1>Select what Genre of Music you would like to listen to </h1>
+
+
+        <% @genres.each do |row| %>
+        <li>
+          <a href='/videos/<%= row['genre'] %>'>
+            <%= row['genre'] %>
+          </a>
+        </li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

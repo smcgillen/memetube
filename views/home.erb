@@ -1,0 +1,15 @@
+<form method='post' action='<%= @video.nil? ? '/create' : "/videos/#{@video['id']}" %>'>
+  <input name='title' placeholder='Title' value="<%= @video['title'] if @video %>" auotfocus>
+  <input name='description' placeholder='Description'  value="<%= @video['description'] if @video %>">
+  <input name='url' placeholder='Url'  value="<%= @video['url'] if @video %>">
+  <input name='genre' placeholder='Genre'  value="<%= @video['genre'] if @video %>">
+
+  <textarea name='code'placeholder='Embeded Code'><%= @video['code'] if @video %></textarea>
+  <button>Add/Edit Video</button>
+
+  <p> this is a home page that needs some styling :-)</p>
+
+
+
+
+</form>

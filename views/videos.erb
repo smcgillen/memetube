@@ -1,0 +1,23 @@
+<div class="vid">
+
+
+<% @videos.each do |bug| %>
+<section>
+
+
+  <h1><%= bug['genre'] %></h1>
+  <h2><%= bug['title'] %></h2>
+
+  <h3><%= bug['description'] %></h3>
+  <a href="<%= bug['url'] %>"View on Youtube"></a>
+
+  <%= bug['code'] %>
+
+  <a href="/videos/<%= bug['id'] %>/edit"><button>Edit</button></a>
+  <form method='post' action='/videos/<%= bug['id'] %>/delete'>
+    <button>delete</button>
+  </form>
+</section>
+<% end %>
+
+</div>

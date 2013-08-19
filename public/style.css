@@ -1,0 +1,50 @@
+* {
+  padding: auto;
+  margin: 5px;
+}
+
+
+h1 {
+
+  font-family: Arial Verdana;
+  font-size: 30px;
+}
+
+h2 {
+
+  font-family: Arial Verdana;
+  font-size: 25px;
+}
+
+h3 {
+
+  font-family: Arial Verdana;
+  font-size: 20px;
+}
+
+section {
+  float: center;
+  width: auto;
+  margin: auto;
+
+}
+
+img {
+  width: 190px;
+  height: auto;
+}
+
+div.vid {
+
+
+  text-align: center;
+
+}
+
+body {
+  background-color: yellow;
+}
+
+a {
+text-align: center;
+}
